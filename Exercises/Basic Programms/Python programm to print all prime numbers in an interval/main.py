@@ -27,9 +27,8 @@ def prime_compiler(min_range, max_range):
         counter += 1
     return prime_list
 
-while True:
-    print("This program is takes two numbers and finds all prime numbers in between")
-    min_range = int(input("insert the minimum range: "))
-    max_range = int(input("insert the maximum range: "))
+print("This program is takes two numbers and finds all prime numbers in between")
+min_range = int(input("insert the minimum range: "))
+max_range = int(input("insert the maximum range: "))
 
-    print(prime_compiler(min_range, max_range))
+print(prime_compiler(min_range, max_range))
