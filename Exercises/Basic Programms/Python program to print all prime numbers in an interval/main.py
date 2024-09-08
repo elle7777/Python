@@ -31,4 +31,4 @@ print("This program is takes two numbers and finds all prime numbers in between"
 min_range = int(input("insert the minimum range: "))
 max_range = int(input("insert the maximum range: "))
 
-print(prime_compiler(min_range, max_range))
+print(f"these are all the prime numbers between {min_range} and {max_range} {prime_compiler(min_range, max_range)}")
