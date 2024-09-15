@@ -28,4 +28,4 @@ rotation = int(input("insert the number of steps: "))
 
 number_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 print(f"{number_list} before the rotation")
-print(f"{array_rotation_iteration(number_list, rotation)} after the reotation")
+print(f"{array_rotation_iteration(number_list, rotation)} after the rotation")
