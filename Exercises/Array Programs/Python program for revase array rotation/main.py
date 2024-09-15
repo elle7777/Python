@@ -1,15 +1,13 @@
-#Array Rotation
+#Revers Array rotaion
 #verion 0.1.0
 #@Iustin Desrobitu
 
 def array_rotation(number_list):
     temp_list = number_list.copy()
-    temp_number = number_list[-1]
-    temp_list.pop(-1)
-    new_list = []
+    temp_number = number_list[0]
+    temp_list.pop(0)
+    new_list = temp_list.copy()
     new_list.append(temp_number)
-    for number in range(len(number_list) - 1):
-        new_list.append(number_list[number])
     return new_list
 
 def array_rotation_iteration(number_list, rotation):
@@ -21,11 +19,11 @@ def array_rotation_iteration(number_list, rotation):
         new_list = array_rotation(new_list)
         array_rotation(new_list)
         counter += 1
-    return new_list
+    return new_list    
 
-print("This Pogram rotates an array of numbers to the right by an amount")
-rotation = int(input("insert the number of steps: "))
+print("This Pogram rotates an array of numbers to the left by an amount")
+rotaion = int(input("insert the number of steps: "))
 
 number_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-print(f"{number_list} before the rotation")
-print(f"{array_rotation_iteration(number_list, rotation)} after the reotation")
+print(f"{number_list} before rotation")
+print(f"{array_rotation_iteration(number_list, rotaion)} after the rotation")

@@ -1,0 +1,1 @@
+rotation = int(input("insert the number of steps: "))
