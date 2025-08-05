@@ -11,7 +11,7 @@ def int_converter(number_list):
 def array_adder(number_list):
     array_sum = 0
     int_list = int_converter(number_list)
-    for number in int_list:
+    for number in int_list
         array_sum += number
     return array_sum
 
